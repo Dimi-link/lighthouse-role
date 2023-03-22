@@ -1,0 +1,5 @@
+---
+- name: Get lighthouse distrib
+          ansible.builtin.get_url:
+            url: "{{ lighthouse_distrib }}"
+            dest: ./lighthouse.zip

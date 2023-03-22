@@ -1,0 +1,7 @@
+---
+- name: Unpack lighthouse archive
+          become: true
+          ansible.builtin.unarchive:
+            src: ./lighthouse.zip
+            dest: /usr/share/nginx
+            remote_src: yes
